@@ -1,0 +1,389 @@
+// // // // // import React from "react";
+// // // // // import { useLocation } from "react-router-dom";
+// // // // // import { Container, Typography, Grid, Paper } from "@mui/material";
+
+// // // // // const TicketDetails = ({ label, value }) => (
+// // // // //   <Grid item xs={12} sm={6} md={4}>
+// // // // //     <Paper elevation={3} style={{ padding: 20, marginBottom: 20 }}>
+// // // // //       <Typography variant="subtitle1" gutterBottom>
+// // // // //         {label}
+// // // // //       </Typography>
+// // // // //       <Typography variant="body1">{value}</Typography>
+// // // // //     </Paper>
+// // // // //   </Grid>
+// // // // // );
+
+// // // // // const Riri = () => {
+// // // // //   const location = useLocation();
+// // // // //   const { ticketData } = location.state;
+
+// // // // //   if (!ticketData) {
+// // // // //     return <div>Données du ticket non disponibles</div>;
+// // // // //   }
+
+// // // // //   return (
+// // // // //     <Container maxWidth="lg" style={{ marginTop: 20 }}>
+// // // // //       <Typography variant="h4" gutterBottom>
+// // // // //         Détails du Ticket
+// // // // //       </Typography>
+// // // // //       <Grid container spacing={3}>
+// // // // //         <TicketDetails label="Code" value={ticketData.interCode} />
+// // // // //         <TicketDetails label="Désignation" value={ticketData.interDesignation} />
+// // // // //         <TicketDetails label="Description" value={ticketData.description} />
+// // // // //         <TicketDetails label="Date prévue" value={ticketData.datePrevue} />
+// // // // //         <TicketDetails label="Heure prévue" value={ticketData.heurePrevue} />
+// // // // //         <TicketDetails label="Durée prévue" value={ticketData.dureePrevue} />
+// // // // //         <TicketDetails label="Unité de durée" value={ticketData.unitCodeDuree} />
+// // // // //         <TicketDetails label="Localisation de l'intervention" value={ticketData.intervLocalisation} />
+// // // // //         <TicketDetails label="Sous garantie" value={ticketData.sousGarantie} />
+// // // // //         <TicketDetails label="Sous contrat" value={ticketData.sousContrat} />
+// // // // //         <TicketDetails label="Statut" value={ticketData.interStatut} />
+// // // // //         <TicketDetails label="Durée d'arrêt" value={ticketData.dureeArret} />
+// // // // //         <TicketDetails label="Heure d'arrêt" value={ticketData.heureArret} />
+// // // // //         <TicketDetails label="Intervention priorité" value={ticketData.interventionPriorite} />
+// // // // //         <TicketDetails label="Intervention client" value={ticketData.client.codeClient} />
+// // // // //         <TicketDetails label="Nature" value={ticketData.interventionNature.libelle} />
+// // // // //         {/* Ajoutez d'autres attributs du ticket ici */}
+// // // // //       </Grid>
+// // // // //     </Container>
+// // // // //   );
+// // // // // };
+
+// // // // // export default Riri;
+
+
+
+// // // // // import React from "react";
+// // // // // import { useLocation } from "react-router-dom";
+// // // // // import { Container, Typography, Box, Divider } from "@mui/material";
+
+// // // // // const TicketDetails = () => {
+// // // // //   const location = useLocation();
+// // // // //   const { ticketData } = location.state;
+
+// // // // //   if (!ticketData) {
+// // // // //     return <div>Données du ticket non disponibles</div>;
+// // // // //   }
+
+// // // // //   return (
+// // // // //     <Container maxWidth="md" style={{ marginTop: 20 }}>
+// // // // //       <Box border={1} borderRadius={8} padding={3}>
+// // // // //         <Typography variant="h5" gutterBottom>
+// // // // //           Détails du Ticket
+// // // // //         </Typography>
+// // // // //         <Divider />
+// // // // //         <Box marginTop={2}>
+// // // // //           <Typography variant="body1">
+// // // // //             <strong>Code:</strong> {ticketData.interCode}
+// // // // //           </Typography>
+// // // // //           <Typography variant="body1">
+// // // // //             <strong>Désignation:</strong> {ticketData.interDesignation}
+// // // // //           </Typography>
+// // // // //           <Typography variant="body1">
+// // // // //             <strong>Description:</strong> {ticketData.description}
+// // // // //           </Typography>
+// // // // //           <Typography variant="body1">
+// // // // //             <strong>Date prévue:</strong> {ticketData.datePrevue}
+// // // // //           </Typography>
+// // // // //           <Typography variant="body1">
+// // // // //             <strong>Heure prévue:</strong> {ticketData.heurePrevue}
+// // // // //           </Typography>
+// // // // //           <Typography variant="body1">
+// // // // //             <strong>Durée prévue:</strong> {ticketData.dureePrevue}
+// // // // //           </Typography>
+// // // // //           <Typography variant="body1">
+// // // // //             <strong>Statut:</strong> {ticketData.interStatut}
+// // // // //           </Typography>
+// // // // //           <Typography variant="body1">
+// // // // //             <strong>Durée d'arrêt:</strong> {ticketData.dureeArret}
+// // // // //           </Typography>
+// // // // //           <Typography variant="body1">
+// // // // //             <strong>Heure d'arrêt:</strong> {ticketData.heureArret}
+// // // // //           </Typography>
+// // // // //           <Typography variant="body1">
+// // // // //             <strong>Intervention priorité:</strong> {ticketData.interventionPriorite}
+// // // // //           </Typography>
+// // // // //           <Typography variant="body1">
+// // // // //             <strong>Intervention client:</strong> {ticketData.client.codeClient}
+// // // // //           </Typography>
+// // // // //           <Typography variant="body1">
+// // // // //             <strong>Nature:</strong> {ticketData.interventionNature.libelle}
+// // // // //           </Typography>
+// // // // //         </Box>
+// // // // //       </Box>
+// // // // //     </Container>
+// // // // //   );
+// // // // // };
+
+// // // // // export default TicketDetails;
+
+
+
+
+// // // // import React from "react";
+// // // // import { useLocation } from "react-router-dom";
+// // // // import { Container, Typography, Grid, Paper, Divider } from "@mui/material";
+
+// // // // const TicketDetails = () => {
+// // // //   const location = useLocation();
+// // // //   const { ticketData } = location.state;
+
+// // // //   if (!ticketData) {
+// // // //     return <div>Données du ticket non disponibles</div>;
+// // // //   }
+
+// // // //   return (
+// // // //     <Container maxWidth="md" style={{ marginTop: 20 }}>
+// // // //       <Paper elevation={3} style={{ padding: 20 }}>
+// // // //         <Typography variant="h4" gutterBottom>
+// // // //           Détails du Ticket
+// // // //         </Typography>
+// // // //         <Divider style={{ marginBottom: 20 }} />
+// // // //         <Grid container spacing={2}>
+// // // //           <Grid item xs={6}>
+// // // //             <Typography variant="body1">
+// // // //               <strong>Code:</strong> {ticketData.interCode}
+// // // //             </Typography>
+// // // //             <Typography variant="body1">
+// // // //               <strong>Désignation:</strong> {ticketData.interDesignation}
+// // // //             </Typography>
+// // // //             <Typography variant="body1">
+// // // //               <strong>Description:</strong> {ticketData.description}
+// // // //             </Typography>
+// // // //             <Typography variant="body1">
+// // // //               <strong>Date prévue:</strong> {ticketData.datePrevue}
+// // // //             </Typography>
+// // // //             <Typography variant="body1">
+// // // //               <strong>Heure prévue:</strong> {ticketData.heurePrevue}
+// // // //             </Typography>
+// // // //             <Typography variant="body1">
+// // // //               <strong>Durée prévue:</strong> {ticketData.dureePrevue}
+// // // //             </Typography>
+// // // //           </Grid>
+// // // //           <Grid item xs={6}>
+// // // //             <Typography variant="body1">
+// // // //               <strong>Statut:</strong> {ticketData.interStatut}
+// // // //             </Typography>
+// // // //             <Typography variant="body1">
+// // // //               <strong>Durée d'arrêt:</strong> {ticketData.dureeArret}
+// // // //             </Typography>
+// // // //             <Typography variant="body1">
+// // // //               <strong>Heure d'arrêt:</strong> {ticketData.heureArret}
+// // // //             </Typography>
+// // // //             <Typography variant="body1">
+// // // //               <strong>Intervention priorité:</strong> {ticketData.interventionPriorite}
+// // // //             </Typography>
+// // // //             <Typography variant="body1">
+// // // //               <strong>Intervention client:</strong> {ticketData.client.codeClient}
+// // // //             </Typography>
+// // // //             <Typography variant="body1">
+// // // //               <strong>Nature:</strong> {ticketData.interventionNature.libelle}
+// // // //             </Typography>
+// // // //           </Grid>
+// // // //         </Grid>
+// // // //       </Paper>
+// // // //     </Container>
+// // // //   );
+// // // // };
+
+// // // // export default TicketDetails;
+
+
+
+// // // import React from "react";
+// // // import { useLocation } from "react-router-dom";
+// // // import { Container, Typography, Box, Divider } from "@mui/material";
+
+// // // const TicketDetails = () => {
+// // //   const location = useLocation();
+// // //   const { ticketData } = location.state;
+
+// // //   if (!ticketData) {
+// // //     return <div>Données du ticket non disponibles</div>;
+// // //   }
+
+// // //   return (
+// // //     <Container maxWidth="md" style={{ marginTop: 20 }}>
+// // //       <Box border={1} borderRadius={8} padding={3}>
+// // //         <Typography variant="h5" gutterBottom>
+// // //           Détails du Ticket
+// // //         </Typography>
+// // //         <Divider />
+// // //         <Box marginTop={2}>
+// // //           <Typography variant="body1">
+// // //             <strong>Code:</strong> {ticketData.interCode}
+// // //           </Typography>
+// // //           <Typography variant="body1">
+// // //             <strong>Désignation:</strong> {ticketData.interDesignation}
+// // //           </Typography>
+// // //           <Typography variant="body1">
+// // //             <strong>Description:</strong> {ticketData.description}
+// // //           </Typography>
+// // //           <Typography variant="body1">
+// // //             <strong>Date prévue:</strong> {ticketData.datePrevue}
+// // //           </Typography>
+// // //           <Typography variant="body1">
+// // //             <strong>Heure prévue:</strong> {ticketData.heurePrevue}
+// // //           </Typography>
+// // //           <Typography variant="body1">
+// // //             <strong>Durée prévue:</strong> {ticketData.dureePrevue}
+// // //           </Typography>
+// // //           <Typography variant="body1">
+// // //             <strong>Statut:</strong> {ticketData.interStatut}
+// // //           </Typography>
+// // //           <Typography variant="body1">
+// // //             <strong>Durée d'arrêt:</strong> {ticketData.dureeArret}
+// // //           </Typography>
+// // //           <Typography variant="body1">
+// // //             <strong>Heure d'arrêt:</strong> {ticketData.heureArret}
+// // //           </Typography>
+// // //           <Typography variant="body1">
+// // //             <strong>Intervention priorité:</strong> {ticketData.interventionPriorite}
+// // //           </Typography>
+// // //           <Typography variant="body1">
+// // //             <strong>Intervention client:</strong> {ticketData.client.codeClient}
+// // //           </Typography>
+// // //           <Typography variant="body1">
+// // //             <strong>Nature:</strong> {ticketData.interventionNature.libelle}
+// // //           </Typography>
+// // //         </Box>
+// // //       </Box>
+// // //     </Container>
+// // //   );
+// // // };
+
+// // // export default TicketDetails;
+
+
+
+
+// // import React from "react";
+// // import { useLocation } from "react-router-dom";
+// // import { Container, Typography, Box, Divider, Grid, Paper } from "@mui/material";
+
+// // const TicketDetails = () => {
+// //   const location = useLocation();
+// //   const { ticketData } = location.state;
+
+// //   if (!ticketData) {
+// //     return <div>Données du ticket non disponibles</div>;
+// //   }
+
+// //   return (
+// //     <Container maxWidth="md" style={{ marginTop: 20 }}>
+// //       <Paper elevation={3} style={{ padding: 20 }}>
+// //         <Typography variant="h5" gutterBottom>
+// //           Détails du Ticket
+// //         </Typography>
+// //         <Divider />
+// //         <Box marginTop={2}>
+// //           <Grid container spacing={3}>
+// //             <Grid item xs={6}>
+// //               <Typography variant="body1">
+// //                 <strong>Code:</strong> {ticketData.interCode}
+// //               </Typography>
+// //               <Typography variant="body1">
+// //                 <strong>Désignation:</strong> {ticketData.interDesignation}
+// //               </Typography>
+// //               <Typography variant="body1">
+// //                 <strong>Description:</strong> {ticketData.description}
+// //               </Typography>
+// //               <Typography variant="body1">
+// //                 <strong>Date prévue:</strong> {ticketData.datePrevue}
+// //               </Typography>
+// //               <Typography variant="body1">
+// //                 <strong>Heure prévue:</strong> {ticketData.heurePrevue}
+// //               </Typography>
+// //               <Typography variant="body1">
+// //                 <strong>Statut:</strong> {ticketData.interStatut}
+// //               </Typography>
+// //             </Grid>
+// //             <Grid item xs={6}>
+// //               <Typography variant="body1">
+// //                 <strong>Durée d'arrêt:</strong> {ticketData.dureeArret}
+// //               </Typography>
+// //               <Typography variant="body1">
+// //                 <strong>Heure d'arrêt:</strong> {ticketData.heureArret}
+// //               </Typography>
+// //               <Typography variant="body1">
+// //                 <strong>Intervention priorité:</strong> {ticketData.interventionPriorite}
+// //               </Typography>
+// //               <Typography variant="body1">
+// //                 <strong>Intervention client:</strong> {ticketData.client.codeClient}
+// //               </Typography>
+// //               <Typography variant="body1">
+// //                 <strong>Nature:</strong> {ticketData.interventionNature.libelle}
+// //               </Typography>
+// //             </Grid>
+// //           </Grid>
+// //         </Box>
+// //       </Paper>
+// //     </Container>
+// //   );
+// // };
+
+// // export default TicketDetails;
+
+
+
+// import React from "react";
+// import { useLocation } from "react-router-dom";
+// import { Container, Typography, Box, Grid, Paper } from "@mui/material";
+
+// const TicketDetails = () => {
+//   const location = useLocation();
+//   const { ticketData } = location.state;
+
+//   if (!ticketData) {
+//     return <div>Données du ticket non disponibles</div>;
+//   }
+
+//   return (
+//     <Container maxWidth="md" style={{ marginTop: 20 }}>
+//       <Paper elevation={3} style={{ padding: 20 }}>
+//         <Typography variant="h5" gutterBottom>
+//           Détails du Ticket
+//         </Typography>
+//         <Grid container spacing={3}>
+//           <Grid item xs={12} sm={6}>
+//             <Typography variant="body1">
+//               <strong>Code:</strong> {ticketData.interCode}
+//             </Typography>
+//             <Typography variant="body1">
+//               <strong>Désignation:</strong> {ticketData.interDesignation}
+//             </Typography>
+//             <Typography variant="body1">
+//               <strong>Description:</strong> {ticketData.description}
+//             </Typography>
+//             <Typography variant="body1">
+//               <strong>Date prévue:</strong> {ticketData.datePrevue}
+//             </Typography>
+//             <Typography variant="body1">
+//               <strong>Heure prévue:</strong> {ticketData.heurePrevue}
+//             </Typography>
+//           </Grid>
+//           <Grid item xs={12} sm={6}>
+//             <Typography variant="body1">
+//               <strong>Statut:</strong> {ticketData.interStatut}
+//             </Typography>
+//             <Typography variant="body1">
+//               <strong>Durée d'arrêt:</strong> {ticketData.dureeArret}
+//             </Typography>
+//             <Typography variant="body1">
+//               <strong>Heure d'arrêt:</strong> {ticketData.heureArret}
+//             </Typography>
+//             <Typography variant="body1">
+//               <strong>Intervention priorité:</strong> {ticketData.interventionPriorite}
+//             </Typography>
+//             <Typography variant="body1">
+//               <strong>Intervention client:</strong> {ticketData.client.codeClient}
+//             </Typography>
+//           </Grid>
+//         </Grid>
+//       </Paper>
+//     </Container>
+//   );
+// };
+
+// export default TicketDetails;
+
